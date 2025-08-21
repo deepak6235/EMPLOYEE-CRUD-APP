@@ -1,0 +1,156 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.show-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f8ff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.show-navbar {
+  width: 100vw;
+  background: linear-gradient(135deg, #4a90e2, #0072ff);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.show-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.show-search-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.show-search {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 250px;
+  transition: 0.3s ease;
+}
+
+.show-search:focus {
+  width: 300px;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.show-add-btn {
+  background: white;
+  color: #0072ff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.show-add-btn:hover {
+  background: #f0f8ff;
+}
+
+.show-content {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.show-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+  width: 100vw;
+  max-width: 1200px;
+}
+
+.show-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.show-card:hover {
+  transform: translateY(-5px);
+  color: wheat;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.show-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.show-card p {
+  color: #666;
+  margin: 0.5rem 0 1rem;
+}
+
+.show-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.show-btn {
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: 0.3s ease;
+}
+
+.show-btn.view {
+  background: #4a90e2;
+  color: white;
+}
+
+.show-btn.view:hover {
+  background: #357abd;
+}
+
+.show-btn.edit {
+  background: #ff9800;
+  color: white;
+}
+
+.show-btn.edit:hover {
+  background: #e68900;
+}
+
+.show-btn.delete {
+  background: #e74c3c;
+  color: white;
+}
+
+.show-btn.delete:hover {
+  background: #c0392b;
+}
+
+.show-empty {
+  font-size: 1.2rem;
+  color: #888;
+}
